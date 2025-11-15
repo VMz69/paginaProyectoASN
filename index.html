@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudForge — Plataforma de Alojamiento (Proyecto)</title>
+</head>
+<body style="margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: linear-gradient(120deg,#0f172a 0%, #07102a 45%, #0b1220 100%); color:#e6eef8; line-height:1.6;">
+
+  <!-- Hero -->
+  <header style="padding:64px 24px; text-align:center;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h1 style="font-size:44px; margin:0 0 16px; letter-spacing:-1px; font-weight:800; color:#ffffff; text-shadow:0 6px 30px rgba(2,6,23,0.6);">CloudForge <span style="color:#7dd3fc;font-weight:700;">— Alojamiento</span></h1>
+      <p style="font-size:18px; margin:0 auto 24px; max-width:820px; color:#cfe9ff; opacity:0.95;">Plataforma de despliegue y escalado para aplicaciones modernas. Piensa en App Engine, pero pensada para tu proyecto: despliegues automáticos, escalado según demanda, y métricas integradas.</p>
+
+      <div style="display:inline-flex; gap:12px; margin-top:18px;">
+        <a href="#planes" style="display:inline-block;padding:14px 22px;background: linear-gradient(90deg,#06b6d4,#7dd3fc);color:#052026;border-radius:12px;font-weight:700;text-decoration:none;box-shadow:0 8px 30px rgba(3,8,18,0.6);">Ver planes</a>
+        <a href="#caracteristicas" style="display:inline-block;padding:14px 22px;border-radius:12px;border:1px solid rgba(255,255,255,0.08);color:#e6f7ff;text-decoration:none;">Explorar características</a>
+      </div>
+
+      <div style="margin-top:36px;background:linear-gradient(180deg, rgba(125,211,252,0.06), transparent); display:flex; justify-content:center; gap:12px; padding:14px; border-radius:14px; backdrop-filter: blur(6px);">
+        <div style="text-align:center; padding:8px 16px;">
+          <div style="font-size:20px; font-weight:800;">99.99%</div>
+          <div style="font-size:12px; opacity:0.8;">Disponibilidad</div>
+        </div>
+        <div style="width:1px; background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));"></div>
+        <div style="text-align:center; padding:8px 16px;">
+          <div style="font-size:20px; font-weight:800;">Auto-scale</div>
+          <div style="font-size:12px; opacity:0.8;">Arranca instancias cuando las necesites</div>
+        </div>
+        <div style="width:1px; background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));"></div>
+        <div style="text-align:center; padding:8px 16px;">
+          <div style="font-size:20px; font-weight:800;">PCI & TLS</div>
+          <div style="font-size:12px; opacity:0.8;">Seguridad por diseño</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Wave separator -->
+  <div style="height:60px; overflow:hidden; line-height:0; transform:translateY(-12px);">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="width:100%; height:60px; display:block;">
+      <path d="M0,30 C300,90 900,0 1200,30 L1200 60 L0 60 Z" style="fill:rgba(255,255,255,0.02);"></path>
+    </svg>
+  </div>
+
+  <!-- Features -->
+  <section id="caracteristicas" style="max-width:1100px;margin: -12px auto 40px;padding:32px 24px;">
+    <h2 style="font-size:28px; margin:6px 0 18px; color:#dff6ff;">Características principales</h2>
+
+    <div style="display:flex; flex-wrap:wrap; gap:18px;">
+      <!-- Card 1 -->
+      <div style="flex:1 1 320px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:20px; border-radius:14px; box-shadow: 0 8px 30px rgba(3,8,18,0.6);">
+        <h3 style="margin:0 0 12px; font-size:18px;">Despliegue continuo</h3>
+        <p style="margin:0; color:#cdefff; font-size:14px; opacity:0.95;">Conecta tu repositorio y CloudForge desplegará automáticamente cada commit. Rollbacks instantáneos y versiones etiquetadas listos para producción.</p>
+        <ul style="margin:12px 0 0 20px; color:#cfeaff; opacity:0.95;">
+          <li>Integración Git</li>
+          <li>Canary deploys</li>
+          <li>Rollback con un clic</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="flex:1 1 320px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:20px; border-radius:14px; box-shadow: 0 8px 30px rgba(3,8,18,0.6);">
+        <h3 style="margin:0 0 12px; font-size:18px;">Escalado automático</h3>
+        <p style="margin:0; color:#cdefff; font-size:14px; opacity:0.95;">Define reglas de escalado basadas en latencia, CPU o colas. El servicio escala hacia arriba y hacia abajo sin interrupciones.</p>
+        <ol style="margin:12px 0 0 20px; color:#cfeaff; opacity:0.95;">
+          <li>Escalado por tráfico</li>
+          <li>Escalado por cola de mensajes</li>
+          <li>Ahorro en horas inactivas</li>
+        </ol>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="flex:1 1 320px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:20px; border-radius:14px; box-shadow: 0 8px 30px rgba(3,8,18,0.6);">
+        <h3 style="margin:0 0 12px; font-size:18px;">Observabilidad</h3>
+        <p style="margin:0; color:#cdefff; font-size:14px; opacity:0.95;">Métricas y trazas integradas: paneles en tiempo real, alertas y registros centralizados listos para diagnosticar fallos complejos.</p>
+        <p style="margin:12px 0 0 0; color:#cfeaff; opacity:0.9; font-size:13px;">Integración con Prometheus, OpenTelemetry y exportación a S3/Blob.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section style="background:linear-gradient(180deg, rgba(125,211,252,0.02), transparent); padding:36px 24px;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="font-size:26px; margin-bottom:12px; color:#eaffff;">Casos de uso</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+        <div style="padding:16px; border-radius:12px; background:rgba(255,255,255,0.02);">
+          <h3 style="margin:0 0 8px; font-size:16px;">API públicas y microservicios</h3>
+          <p style="margin:0; color:#dff5ff; font-size:14px;">Despliega microservicios con rutas HTTP, autenticación y límites de tasa aplicados automáticamente.</p>
+        </div>
+        <div style="padding:16px; border-radius:12px; background:rgba(255,255,255,0.02);">
+          <h3 style="margin:0 0 8px; font-size:16px;">Aplicaciones web y SPA</h3>
+          <p style="margin:0; color:#dff5ff; font-size:14px;">Distribución global con CDN integrada y soporte para SSR/SSG.</p>
+        </div>
+        <div style="padding:16px; border-radius:12px; background:rgba(255,255,255,0.02);">
+          <h3 style="margin:0 0 8px; font-size:16px;">Procesamiento por lotes</h3>
+          <p style="margin:0; color:#dff5ff; font-size:14px;">Cargas programadas y trabajos en contenedores, con reintentos y backoff configurables.</p>
+        </div>
+        <div style="padding:16px; border-radius:12px; background:rgba(255,255,255,0.02);">
+          <h3 style="margin:0 0 8px; font-size:16px;">Proyectos educativos</h3>
+          <p style="margin:0; color:#dff5ff; font-size:14px;">Entornos reproducibles para prácticas y laboratorios con cuotas especiales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Long technical section (filler) -->
+  <section style="max-width:1100px; margin:36px auto; padding:24px;">
+    <h2 style="font-size:24px; margin-bottom:12px; color:#e6faff;">Arquitectura (resumen de relleno)</h2>
+    <p style="color:#cfeffb; font-size:14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat, nunc vitae bibendum tincidunt, augue magna vestibulum nibh, vel tincidunt justo lorem non tortor. Sed placerat arcu a sapien facilisis, vitae efficitur turpis pretium. Integer id arcu a nibh tempor dictum. Phasellus dictum tortor ut posuere varius. Cras consequat risus sed lectus pulvinar, in convallis nunc dictum.</p>
+
+    <h3 style="margin-top:18px; font-size:18px; color:#dff6ff;">Componentes</h3>
+    <ul style="color:#dff6ff;">
+      <li>Entrada de tráfico (Load Balancer) — Lorem ipsum dolor sit.</li>
+      <li>Capa de ejecución (Runtimes) — Lorem ipsum dolor sit.</li>
+      <li>Orquestación y autoscaling — Lorem ipsum dolor sit.</li>
+      <li>Métricas y logging centralizado — Lorem ipsum dolor sit.</li>
+    </ul>
+
+    <h3 style="margin-top:18px; font-size:18px; color:#dff6ff;">Flujo típico</h3>
+    <p style="color:#cfeffb; font-size:14px;">1. El usuario hace una petición. 2. El balanceador enruta a la instancia disponible. 3. La instancia procesa y escribe registros. 4. Si la latencia sube, se escala automáticamente. 5. Se envían alertas a los canales configurados.</p>
+
+    <p style="margin-top:14px; color:#cfeffb; font-size:14px;">Mauris tincidunt, enim non ultrices vulputate, urna sem dictum mi, vitae venenatis nisl lacus id augue. Integer sit amet mi tellus. Sed in est vitae velit pretium vehicula. Vestibulum eget risus vitae lorem pulvinar vulputate. Vivamus id lorem sed libero vulputate volutpat.</p>
+  </section>
+
+  <!-- Pricing (filler) -->
+  <section id="planes" style="background:linear-gradient(180deg, rgba(2,6,23,0.0), rgba(7,16,34,0.02)); padding:36px 24px;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="font-size:26px; margin-bottom:12px; color:#e6fbff;">Planes</h2>
+      <div style="display:flex; gap:18px; flex-wrap:wrap;">
+        <div style="flex:1 1 260px; border-radius:14px; padding:18px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));">
+          <h3 style="margin:0 0 8px; font-size:18px;">Hobby</h3>
+          <p style="margin:0 0 12px; font-size:14px; color:#dff6ff;">Lorem ipsum dolor sit amet — 512 MB, despliegues básicos, SSL incluido.</p>
+          <div style="font-weight:800; font-size:18px;">$0<span style="font-weight:400; font-size:12px;">/mes</span></div>
+        </div>
+
+        <div style="flex:1 1 260px; border-radius:14px; padding:18px; background:linear-gradient(180deg, rgba(125,211,252,0.03), rgba(125,211,252,0.01)); box-shadow:0 12px 40px rgba(3,8,18,0.4); border:1px solid rgba(125,211,252,0.06);">
+          <h3 style="margin:0 0 8px; font-size:18px;">Profesional</h3>
+          <p style="margin:0 0 12px; font-size:14px; color:#e6fbff;">Lorem ipsum — 2 GB, autoscale, panorama de métricas.</p>
+          <div style="font-weight:800; font-size:18px;">$29<span style="font-weight:400; font-size:12px;">/mes</span></div>
+        </div>
+
+        <div style="flex:1 1 260px; border-radius:14px; padding:18px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));">
+          <h3 style="margin:0 0 8px; font-size:18px;">Empresa</h3>
+          <p style="margin:0 0 12px; font-size:14px; color:#dff6ff;">Lorem ipsum — recursos dedicados, SLA empresarial, soporte 24/7.</p>
+          <div style="font-weight:800; font-size:18px;">Contactar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials long filler -->
+  <section style="max-width:1100px; margin:36px auto; padding:24px;">
+    <h2 style="font-size:24px; color:#e8fbff;">Lo que dicen (relleno)</h2>
+    <div style="display:flex; gap:12px; flex-direction:column;">
+      <blockquote style="margin:12px 0; padding:16px; border-left:4px solid rgba(125,211,252,0.24); background:rgba(255,255,255,0.01); border-radius:8px; color:#dff7ff;">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor lorem nec velit convallis, ut dapibus massa hendrerit." — Equipo de Desarrollo
+      </blockquote>
+      <blockquote style="margin:12px 0; padding:16px; border-left:4px solid rgba(125,211,252,0.24); background:rgba(255,255,255,0.01); border-radius:8px; color:#dff7ff;">
+        "Suspendisse potenti. Integer feugiat, enim at porttitor laoreet, justo arcu gravida urna, non dictum justo risus at arcu." — CTO (filler)
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Big footer content long filler -->
+  <footer style="background:linear-gradient(180deg, rgba(2,6,23,0.03), rgba(2,6,23,0.06)); padding:36px 24px; margin-top:36px;">
+    <div style="max-width:1100px; margin:0 auto; display:flex; gap:18px; flex-wrap:wrap;">
+      <div style="flex:1 1 320px;">
+        <h4 style="margin:0 0 8px; font-size:16px; color:#e6fbff;">CloudForge (Proyecto)</h4>
+        <p style="margin:0; color:#cfefff; font-size:13px;">Dirección ficticia · 1234 · Ciudad · País</p>
+      </div>
+
+      <div style="flex:1 1 220px;">
+        <h4 style="margin:0 0 8px; font-size:16px; color:#e6fbff;">Recursos</h4>
+        <ul style="padding-left:18px; margin:0; color:#dff6ff; font-size:13px;">
+          <li>Documentación (placeholder)</li>
+          <li>Guías de inicio (placeholder)</li>
+          <li>API Reference (placeholder)</li>
+        </ul>
+      </div>
+
+      <div style="flex:1 1 320px;">
+        <h4 style="margin:0 0 8px; font-size:16px; color:#e6fbff;">Contacto</h4>
+        <p style="margin:0; color:#cfefff; font-size:13px;">hola@cloudforge.local · +503 5555 5555 (ficticio)</p>
+        <p style="margin-top:12px; color:#cfefff; font-size:13px; opacity:0.9;">© Proyecto de ejemplo — contenido de relleno.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
